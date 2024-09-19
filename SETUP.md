@@ -45,6 +45,25 @@ sudo zerotier-cli listnetworks
 2. Look up "my ip" or a similar query to check your IP address.
 3. It should show your home network's IP address, indicating that you're using the proxy.
 
+## 6. Disabling the Proxy
+
+To disable the proxy and return to your normal internet connection, follow these steps:
+
+1. Disable the proxy settings:
+   - Open "System Preferences" > "Network"
+   - Select your active network connection (e.g., Wi-Fi or Ethernet)
+   - Click "Advanced"
+   - Go to the "Proxies" tab
+   - Uncheck the boxes for "Web Proxy (HTTP)" and "Secure Web Proxy (HTTPS)"
+   - Click "OK", then "Apply"
+
+2. Disconnect from ZeroTier:
+   - Open ZeroTier on your macOS device
+   - Click "Leave Network"
+
+Remember to re-enable both of these settings when you want to use the residential proxy again.
+
+
 ## 6. (Optional) Use Terminal with Proxy
 
 To use the proxy in Terminal sessions, you can set environment variables:
